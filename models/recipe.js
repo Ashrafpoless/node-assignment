@@ -10,8 +10,8 @@ const createRecipeTable = async () => {
         ingredients VARCHAR(100) NOT NULL,
         description VARCHAR(200) NOT NULL,
         img VARCHAR(30) NOT NULL
-        )`
-        const createTable = await query(createTableForRecipe)
+        )`;
+        const createTable = await query(createTableForRecipe);
     } catch (err) {
         console.error(err);
     }
